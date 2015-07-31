@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel= "stylesheet" type= "text/css" href="/stylesheets/style.css"/>
+</head>
+<h1>Life at Google </h1>
+<body>
+<p> Dear Diary, </p>
+<span>Today, I got new {{noun1}}, and together we went to a(n)
+  {{adjective1}} {{place1}}. Later, we {{verbEd1}} to the {{historicalmonument1}}
+  and then {{verbEd2}} around in a(n) {{adjective2}} {{animal}}
+  {{vehicle}}. We saw {{historicalmonument2}} and the country's first automatic
+  {{noun2}}. My favorite part of the day was when {{name}} shook his/her {{bodypart}}
+  and shouted "{{onomatopoeia}}" in front of everyone.
+  I had such a(n) {{adjective3}} time, can't wait till next time.
+</span>
+
+<ul>
+  {% for name in team_members %}
+  <li>{{name}}, {{team_members[name]['college']}}</li>
+  {% endfor %}
+</ul>
+</body>
+
+</html>
